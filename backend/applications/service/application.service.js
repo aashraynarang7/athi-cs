@@ -9,7 +9,7 @@ const createJobApplication = async (applicationData, userId, paymentDetails) => 
         const newApplication = new JobApplication({
             ...applicationData,
             userId,
-            paymentDetails
+            
         });
         const savedApplication = await newApplication.save();
 
@@ -77,7 +77,6 @@ const createLoanApplication = async (applicationData, userId, paymentDetails) =>
         const newApplication = new LoanApplication({
             ...applicationData,
             userId,
-            paymentDetails
         });
         const savedApplication = await newApplication.save();
         

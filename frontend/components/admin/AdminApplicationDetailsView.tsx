@@ -46,6 +46,12 @@ export function AdminApplicationDetailsView({ appId, type }: { appId: string, ty
                     <DetailItem label="Current Location" value={detailedApplication.currentLocation} />
                     <DetailItem label="Notice Period" value={detailedApplication.noticePeriod} />
                 </CardContent></Card>
+                <Card>
+                  <CardHeader ><CardTitle>Payment details</CardTitle></CardHeader>
+                  <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <DetailItem label="Trasaction ID" value={detailedApplication.transactionId}></DetailItem>
+                  </CardContent>
+                </Card>
             </>
         ) : (
              <>
@@ -62,6 +68,13 @@ export function AdminApplicationDetailsView({ appId, type }: { appId: string, ty
                     <DetailItem label="Loan Amount" value={detailedApplication.loanAmount} />
                     <DetailItem label="Loan Purpose" value={detailedApplication.loanPurpose} />
                 </CardContent></Card>
+                                <Card>
+                  <CardHeader><CardTitle>Payment details</CardTitle></CardHeader>
+                  <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <DetailItem label="Trasaction ID" value={detailedApplication.transactionId}></DetailItem>
+                  </CardContent>
+                </Card>
+
              </>
         )}
     </div>

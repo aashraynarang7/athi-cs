@@ -586,7 +586,8 @@ const exportAllJobApplications = async () => {
                 noticePeriod: 1, preferLocation: 1, authorized: 1, employerName: 1,
                 department: 1, startDate: 1, endDate: 1, reasonForLeaving: 1,
                 currentDesignation: 1, degree: 1, percentage: 1, aadhaar: 1, uan: 1,
-                languages: 1, submissionDate: '$createdAt'
+                languages: 1, submissionDate: '$createdAt',
+                transactionId:1
             }
         }
     ]);
@@ -623,7 +624,7 @@ const exportAllLoanApplications = async () => {
                 position: 1, employmentDate: 1, employmentType: 1, monthlyIncome: 1,
                 otherIncome: 1, loanAmount: 1, loanPurpose: 1,
                 nomineeName: 1, nomineeContact: 1, nomineeAadhaar: 1,
-                submissionDate: '$createdAt'
+                submissionDate: '$createdAt',transactionId:1
             }
         }
     ]);

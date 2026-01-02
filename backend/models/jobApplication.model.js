@@ -35,11 +35,7 @@ const jobApplicationSchema = new mongoose.Schema({
     uan: { type: String },
     languages: { type: String },
     declaration: { type: Boolean, required: true },
-    paymentDetails: {
-        orderId: String,
-        paymentId: String,
-        amount: Number,
-    },
+    transactionId: { type: String },
 }, { timestamps: true });
 
 const JobApplication = mongoose.model("JobApplication", jobApplicationSchema);
