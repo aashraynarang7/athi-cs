@@ -3,14 +3,14 @@ const cors = require("cors");
 const cookieParser = require("cookie-parser");
 const dotenv = require("dotenv");
 
-const { connectDB } = require("./config/db.js");
+const { connectDB } = require("../config/db.js");
 
-const authRouter = require("./auth/routes/auth.routes.js");
-const applicationRouter = require("./applications/routes/application.routes.js");
-const customerRouter = require("./customer/routes/customer.routes.js");
-const adminRouter = require("./admin/routes/admin.routes.js");
-const contactRouter = require("./contact/routes/contact.routes.js"); 
-const paymentRouter = require("./payment/routes/payment.routes.js");
+const authRouter = require("../auth/routes/auth.routes.js");
+const applicationRouter = require("../applications/routes/application.routes.js");
+const customerRouter = require("../customer/routes/customer.routes.js");
+const adminRouter = require("../admin/routes/admin.routes.js");
+const contactRouter = require("../contact/routes/contact.routes.js"); 
+const paymentRouter = require("../payment/routes/payment.routes.js");
 
 dotenv.config();
 
