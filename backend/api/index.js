@@ -33,6 +33,7 @@ app.use(async (req, res, next) => {
 /* -------------------- CORS -------------------- */
 const allowedOrigins = [
   "http://localhost:3000",
+  "https://athi-cs-vy8f.vercel.app/",
   "https://atithi-consultant-servcies-frontend.vercel.app",
   "https://www.athithconsultant.com",
   "https://athithconsultant.com",
