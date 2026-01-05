@@ -65,7 +65,7 @@ app.get("/", (req, res) => {
 });
 
 /* -------------------- ROUTES -------------------- */
-app.use("/api/auth", authRouter);
+app.use("/auth", authRouter);
 app.use("/api/applications", applicationRouter);
 app.use("/api/customer", customerRouter);
 app.use("/api/admin", adminRouter);
