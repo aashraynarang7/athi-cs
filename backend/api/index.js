@@ -60,19 +60,16 @@ app.use(express.json({
 
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
-app.get("/", (req, res) => {
-  res.send("Hello World!");
-});
 
 /* -------------------- ROUTES -------------------- */
 app.use("/auth", authRouter);
-app.use("/api/applications", applicationRouter);
-app.use("/api/customer", customerRouter);
-app.use("/api/admin", adminRouter);
-app.use("/api/contact", contactRouter);
-app.use("/api/payments", paymentRouter);
+app.use("/applications", applicationRouter);
+app.use("/customer", customerRouter);
+app.use("/admin", adminRouter);
+app.use("/contact", contactRouter);
+app.use("/payments", paymentRouter);
 
-app.get("/api/health", (req, res) => {
+app.get("/health", (req, res) => {
   res.status(200).json({ status: "OK", message: "Server is healthy" });
 });
 
